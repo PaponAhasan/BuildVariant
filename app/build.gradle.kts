@@ -66,6 +66,12 @@ android {
         }
     }
 
+    sourceSets.getByName("free"){
+        java.srcDirs(listOf("src/free/java"))
+        res.srcDirs(listOf("src/free/res"))
+//        manifest.srcFile()
+    }
+
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
